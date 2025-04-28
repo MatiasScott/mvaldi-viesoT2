@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mvaldiñviesoT2.Views.login"
+             Title="login">
+    <VerticalStackLayout Spacing="20" Margin="20">
+        <Label 
+            Text="Iniciar sesion"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Usuario"/>
+        <Entry Placeholder="Ingrese su usuario" Keyboard="Text" x:Name="txtnombre"/>
+
+        <Label Text="Contraseña"/>
+        <Entry Placeholder="Ingrese su contraseña" IsPassword="True" x:Name="txtcontrasena"/>
+
+        <Button Text="Iniciar sesion" x:Name="btnLogin" Clicked="btnLogin_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
