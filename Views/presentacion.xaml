@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mvaldiñviesoT2.Views.presentacion"
+             Title="presentacion">
+    <VerticalStackLayout Padding="20" Margin="20">
+        <Label
+            Text="SISTEMA DE CALIFICACIONES"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            />
+        <Label
+    Text="PARCIAL 1"
+    VerticalOptions="Center" 
+    HorizontalOptions="Center" 
+    />
+        <Picker x:Name="pkEstudiantes" Title="Estudiantes">
+            <Picker.Items>
+                <x:String>Matias Valdivieso</x:String>
+                <x:String>Maria Belen Suasnavas</x:String>
+                <x:String>Mabel Salvatierra</x:String>
+                <x:String>Patricio Prieto</x:String>
+                <x:String>Fernanda Sanmartin</x:String>
+            </Picker.Items>
+        </Picker>
+        <Entry Keyboard="Numeric"
+    Placeholder="iNGRESE NOTA SEGUIMIENTO"
+               x:Name="txtNotaS1"
+    />
+        <Entry Keyboard="Numeric"
+    Placeholder="INGRESE NOTA EXAMEN"
+               x:Name="txtExamen1"
+    />
+        <Label
+    Text="Nota Parcial 1"
+            x:Name="lblNotaParcial1"
+    />
+        <Label
+Text="PARCIAL 2"
+VerticalOptions="Center" 
+HorizontalOptions="Center" 
+/>
+        <Entry Keyboard="Numeric"
+Placeholder="iNGRESE NOTA SEGUIMIENTO"
+               x:Name="txtNotaS2"
+/>
+        <Entry Keyboard="Numeric"
+Placeholder="INGRESE NOTA EXAMEN"
+               x:Name="txtExamen2"
+/>
+        <Label
+Text="Nota Parcial 2"
+        x:Name="lblNotaParcial2"
+/>
+        <DatePicker x:Name="pkDate"></DatePicker>
+
+        <Button Text="CALCULAR NOTAS DEL ESTUDIANTE" x:Name="btnNotas" Clicked="btnNotas_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
